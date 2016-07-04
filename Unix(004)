@@ -1,1 +1,10 @@
+What is the Difference between cp and ln command in Unix?
+
+The cp command creates an actual copy of a file elsewhere on your hard drive. 
+The ln command creates either a hard or symbolic link to the file you specify.
+(If you perform the ln command on a file, and delete the original file, the links won't work).
+In ln command,The use of a hard link allows multiple filenames to be associated with the same file since a hard link points to the inode of a given file, the data of which is stored on disk.
+On the other hand, symbolic links are special files that refer to other files by name.
+The ln command by default creates hard links, and when called with the command line parameter ln '-s' creates symbolic links.
+ 
 
